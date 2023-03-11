@@ -1,0 +1,359 @@
+#nav-tabContent, #nav-tab{
+    width: 70%;
+}
+
+header{
+    background-color: #a2d0fe;
+    width: 100%;
+}
+
+main{
+    padding-left: 50px;
+    padding-top: 50px;
+    height: 100vh;
+    background-color: antiquewhite;
+}
+
+nav{
+    background-color: #a2d0fe;
+    padding-top: 50px;
+}
+
+#nav-tab{
+    background-color: #a2d0fe;
+}
+
+#nav-education-tab, #nav-exp-tab, #nav-skills-tab, #nav-contact-tab{
+    background-color: #fff;
+}
+
+#nav-home-tab{
+    background-color: antiquewhite;
+}
+
+#nav-tab > button{
+    width: 20%;
+}
+
+body, main, nav, .flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+#profileImg{
+    border-radius: 50%;
+    margin: 50px 10px 50px 10px;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+}
+
+.flex-container > h1{
+    width: 100%;
+    text-align: center;
+}
+
+#home-container, #exp-container, #education-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
+    margin-left: 9%;
+}
+
+#home-container{
+    background-color: #fff;
+    width: 85%;
+    margin-left: 5%;
+    padding: 2%;
+}
+
+#nav-home, #nav-education, #nav-exp, #nav-contact{
+    width: 100%;
+}
+
+#home-container > h4{
+    width: 100%;
+}
+
+.card{
+    margin-bottom: 40px;
+}
+
+.card-text > span{
+    font-weight: bold;
+}
+
+#skills-container{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.list-group-flush{
+    width: 40%;
+    padding-right: 50px;
+}
+
+#skillsTitle, #langTitle{
+    text-align: center;
+    font-weight: bold;
+}
+
+.accordion-button{
+    transition: 0.15s;
+}
+
+#education-container{
+    border: 1px solid #dee2e6;
+    border-radius: 0.2rem;
+}
+
+#accordionFlush{
+    width: 100%;
+}
+
+.item-selected{
+    background-color: #a2d0fe;
+    color: #1628ff;
+}
+
+.list-education > li, .list-contact > li{
+    border: none;
+    background-color: cornsilk;
+}
+
+.list-education > li > span, .list-contact > li > span{
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+#contact-container{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin-top: 0;
+    width: 90%;
+}
+
+.contact-division{
+    width: 40%;
+}
+
+#contact-msj{
+    border: 2px solid rgb(61, 156, 244);
+    padding: 5%;
+    background-color: cornsilk
+}
+
+.button-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.list-contact li{
+    border-left: 2px solid rgb(61, 156, 244);
+    border-right: 2px solid rgb(61, 156, 244);
+}
+
+.list-contact li:nth-child(1){
+    border-top: 2px solid rgb(61, 156, 244);
+}
+
+.list-contact li:nth-child(4){
+    border-bottom: 2px solid rgb(61, 156, 244);
+}
+
+i{
+    width: 50px;
+    display: inline-block;
+    height: 50px;
+}
+
+.accordion-collapse, .list-education > li{
+    background-color: cornsilk;
+}
+
+
+/*-- media querys --*/
+
+@media (max-width: 1248px) {
+    
+    .contact-division{
+        width: 47%;
+    }
+
+    #contact-container{
+        width: 95%;
+        justify-content: space-between;
+    }
+
+    .list-group-flush{
+        width: 45%;
+    }
+}
+
+@media (max-width: 1016px) {
+    
+    .contact-division{
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-bottom: 7%;
+    }
+
+    #contact-container{
+        width: 90%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .list-group-flush{
+        width: 50%;
+    }
+}
+
+@media (max-width: 940px) {
+    
+    #nav-tabContent, #nav-tab{
+        width: 90%;
+    }
+
+    .list-group-flush{
+        width: 45%;
+    }
+}
+
+@media (max-width: 720px) {
+    
+    #nav-tabContent, #nav-tab{
+        width: 100%;
+    }
+
+    .list-group-flush{
+        width: 50%;
+    }
+}
+
+@media (max-width: 640px) {
+    
+    #nav-tab{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        border-bottom: 8px solid silver;
+        border-top: 8px solid silver;
+    }
+
+    #nav-tab > button{
+        width: 100%;
+    }
+
+    .contact-division{
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    #skills-container{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .list-group-flush{
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 7%;
+    }
+}
+
+@media (max-width: 529px) {
+    
+    .contact-division{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .list-group-flush{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+@media (max-width: 469px) {
+    
+    .contact-division{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .list-group-flush{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media (max-width: 422px) {
+    
+    .contact-division{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .list-group-flush{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 385px) {
+    
+    .contact-division{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #contact-container{
+        width: 100%;
+    }
+
+    main{
+        padding-left: 0;
+    }
+
+    .list-group-flush{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 335px) {
+    
+    .contact-division{
+        width: 99%;
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+    }
+
+    .list-group-flush{
+        width: 99%;
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+    }
+}
+
+
